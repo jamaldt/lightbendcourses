@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hello-world-api" />
+        <module name="hello-world-impl" />
+      </profile>
+    </annotationProcessing>
+  </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="hello-world" options="-parameters -Werror" />
+      <module name="hello-world" options="" />
+      <module name="hello-world-api" options="-parameters -Werror" />
+      <module name="hello-world-impl" options="-parameters -Werror" />
     </option>
   </component>
 </project>
